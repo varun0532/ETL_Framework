@@ -5,7 +5,7 @@ from utility.read_lib import read_file
 
 spark = SparkSession.builder.getOrCreate()
 
-test_cases = pd.read_excel(r"E:\ETL Automation\ETL_Test_Automation_Framework\config\Master_Test_Template.xlsx")
+test_cases = pd.read_excel(r"E:\ETL Automation\ETL_Framework\config\Master_Test_Template.xlsx")
 print(test_cases.head(5))
 
 run_test_cases = test_cases.loc[(test_cases.execution_ind =='Y')]
