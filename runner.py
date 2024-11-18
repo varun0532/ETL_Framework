@@ -24,7 +24,7 @@ validation.show(truncate=False)
 
 testcases = validation.collect()
 
-print("testcases in list form:",testcases)
+print("testcases in list form:", testcases)
 
 for row in testcases:
     print("source_file_path/table and type",row['source'],row['source_type'])
